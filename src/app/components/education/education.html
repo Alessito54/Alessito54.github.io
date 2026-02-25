@@ -1,0 +1,14 @@
+<section class="section education-section">
+  <h2 class="section-title">Education</h2>
+  <div class="section-divider"></div>
+  <div class="education-list">
+    <div class="education-item" *ngFor="let item of items">
+      <div class="edu-header">
+        <h3 class="degree">{{ item.degree }}</h3>
+        <span class="period">{{ item.period }}</span>
+      </div>
+      <p class="institution">{{ item.institution }}</p>
+      <p class="description" *ngIf="item.description">{{ item.description }}</p>
+    </div>
+  </div>
+</section>

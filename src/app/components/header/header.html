@@ -1,0 +1,28 @@
+<header class="cv-header">
+  <div class="header-content">
+    <div class="avatar">
+      <span class="initials">{{ info.name.charAt(0) }}</span>
+    </div>
+    <div class="info">
+      <h1>{{ info.name }}</h1>
+      <h2>{{ info.title }}</h2>
+      <div class="contact-bar">
+        <a [href]="'mailto:' + info.email" class="contact-link">
+          <span class="icon">✉</span> {{ info.email }}
+        </a>
+        <span class="contact-link">
+          <span class="icon">📞</span> {{ info.phone }}
+        </span>
+        <span class="contact-link">
+          <span class="icon">📍</span> {{ info.location }}
+        </span>
+        <a [href]="info.github" target="_blank" class="contact-link">
+          <span class="icon">🐙</span> GitHub
+        </a>
+        <a [href]="info.linkedin" target="_blank" class="contact-link">
+          <span class="icon">💼</span> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
